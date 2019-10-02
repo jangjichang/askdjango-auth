@@ -1,0 +1,13 @@
+{% extends "accounts/layout.html" %}
+
+{% block content %}
+    <h2>이메일로 로그인</h2>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="submit"/>
+    </form>
+{% endblock %}
